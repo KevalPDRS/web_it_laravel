@@ -14,6 +14,6 @@ My demo Laravel e-commerce project by [@fundaofwebit](https://www.youtube.com/@f
 
 ## Then run
 
-git add README.md
-git commit -m "Add README file"
-git push
+- git add README.md
+- git commit -m "Add README file"
+- git push
