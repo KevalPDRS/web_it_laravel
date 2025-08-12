@@ -25,6 +25,8 @@ class BrandController extends Controller
     {
         $data = $request->validated();
 
+        $brand_name = $request->post('name');
+
         if ($request->hasFile('image')) {
 
             $file = $request->file('image');
@@ -37,11 +39,11 @@ class BrandController extends Controller
             $data['image'] = $path . $filename;
         }
 
-        $brand_name = $data->name;
+        
         
         Brand::create($data);
 
-        return redirect('/admin/brands')->with('status', 'Brand '.$brand_name.' Created');
+        return redirect('/admin/brands')->with('status', $brand_name.' Brand Created');
     }
 
     public function show(Brand $brand)
@@ -77,7 +79,7 @@ class BrandController extends Controller
 
         $brand->update($data);
 
-        return redirect('/admin/brands')->with('status', 'Brand '.$brand_name.' Updated');
+        return redirect('/admin/brands')->with('status', $brand_name.' Brand Updated');
     }
 
     public function destroy($id)
@@ -90,6 +92,6 @@ class BrandController extends Controller
 
         $brand->delete();
 
-        return redirect('/admin/brands')->with('status', 'Brand '.$brand_name.' Deleted');
+        return redirect('/admin/brands')->with('status', $brand_name.' Brand Deleted');
     }
 }
