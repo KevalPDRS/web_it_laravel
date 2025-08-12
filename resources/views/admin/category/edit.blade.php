@@ -41,10 +41,10 @@
                         </select>
                     </div>
                     <div class="col-md-6">
-                        <label class="form-check-label" for="popular">Popular</label><br>
-                        <input class="form-check-input" type="checkbox" name="popular"
-                            {{ $category->popular == 1 ? 'checked' : '' }}> Check
-                        if you want to show as Popular
+                        <label class="form-check-label">Popular</label><br>
+                        <input class="form-check-input" type="checkbox" name="popular" id="popular" style="width: 24px; height: 24px;" 
+                            {{ $category->popular == 1 ? 'checked' : '' }}> <label class="form-check-label mt-1" for="popular"> Check
+                                if you want to show as Popular</label>
                     </div>
                     <div class="col-md-12">
                         <label for="">Upload Image</label>
