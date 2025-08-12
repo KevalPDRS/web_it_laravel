@@ -30,7 +30,7 @@
                     </div>
                     <div class="col-md-12 mb-2">
                         <label class="form-check-label">Is Active</label><br>
-                        <input class="form-check-input" type="checkbox" value="" name="is_active" id="is_active" style="width: 24px; height: 24px;" {{ $brand->is_active == 1 ? 'checked' : '' }}> <label class="form-check-label mt-1" for="is_active"> Check
+                        <input class="form-check-input" type="checkbox" value="1" name="is_active" id="is_active" style="width: 24px; height: 24px;" {{ $brand->is_active == 1 ? 'checked' : '' }}> <label class="form-check-label mt-1" for="is_active"> Check
                             Check if you want to show.</label>
                     </div>
                     <div class="col-md-12 mb-2">

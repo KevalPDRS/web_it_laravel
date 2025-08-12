@@ -27,7 +27,7 @@ class BrandFormRequest extends FormRequest
             'uuid' => ['required'],
             'name' => ['required'],
             'image' => ['nullable'],
-            'is_active' => ['required'],
+            'is_active' => ['boolean'],
         ];
     }
 
@@ -35,7 +35,7 @@ class BrandFormRequest extends FormRequest
     {
         $this->merge([
             'uuid' => Str::uuid(),
-            'is_active' => $this->is_active == true ? 1 : 0,
+            'is_active' => $this->has('is_active') == true ? 1 : 0,
         ]);
     }
 }

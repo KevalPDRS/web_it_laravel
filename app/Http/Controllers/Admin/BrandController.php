@@ -70,7 +70,7 @@ class BrandController extends Controller
             $imgExt = $file->getClientOriginalExtension();
 
             $filename = time() . '.' . $imgExt;
-            -$path = 'uploads/brands/';
+            $path = 'uploads/brands/';
             $file->move($path, $filename);
 
             $data['image'] = $path . $filename;

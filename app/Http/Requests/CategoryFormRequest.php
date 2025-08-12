@@ -29,7 +29,7 @@ class CategoryFormRequest extends FormRequest
             'slug' => ['required'],
             'description' => ['required'],
             'status' => ['required'],
-            'popular' => ['required'],
+            'popular' => ['boolean'],
             'image' => ['nullable'],
             'meta_title' => ['required'],
             'meta_description' => ['required'],
