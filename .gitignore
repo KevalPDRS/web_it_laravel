@@ -12,6 +12,7 @@
 /.vscode
 /.zed
 /auth.json
+/my_db
 /node_modules
 /public/build
 /public/hot
@@ -22,5 +23,3 @@
 Homestead.json
 Homestead.yaml
 Thumbs.db
-
-/my_db
