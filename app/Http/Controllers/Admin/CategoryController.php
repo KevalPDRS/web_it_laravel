@@ -33,7 +33,7 @@ class CategoryController extends Controller
             $imgExt = $file->getClientOriginalExtension();
 
             $filename = time() . '.' . $imgExt;
-            -$path = 'uploads/category/';
+            $path = 'uploads/category/';
             $file->move($path, $filename);
 
             $data['image'] = $path . $filename;
@@ -67,7 +67,7 @@ class CategoryController extends Controller
             $imgExt = $file->getClientOriginalExtension();
 
             $filename = time() . '.' . $imgExt;
-            -$path = 'uploads/category/';
+            $path = 'uploads/category/';
             $file->move($path, $filename);
 
             $data['image'] = $path . $filename;
@@ -81,6 +81,9 @@ class CategoryController extends Controller
     public function destroy($id)
     {
         $category = Category::findOrFail($id);
+        if (File::exists($category->image)) {
+            File::delete($category->image);
+        }
         $category->delete();
 
         return redirect('/admin/categories')->with('status', 'Category Deleted');

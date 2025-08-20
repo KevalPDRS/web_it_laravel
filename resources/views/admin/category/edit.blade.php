@@ -50,7 +50,7 @@
                         <label for="">Upload Image</label>
                         <input type="file" name="image" class="form-control">
                         @if ($category->image)
-                            <img src="{{ asset("$image") }}" style="width: 100px; height: 100px;;" alt="Img" />
+                            <img src="{{ asset("$category->image") }}" style="width: 100px; height: 100px;;" alt="Img" />
                         @else
                             No image uploaded
                         @endif
@@ -71,7 +71,7 @@
                         <textarea name="meta_keyword" rows="3" class="form-control">{!! $category->meta_keyword !!}</textarea>
                     </div>
                     <div class="col-md-12 text-end">
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-primary">Update</button>
                     </div>
                 </div>
             </form>

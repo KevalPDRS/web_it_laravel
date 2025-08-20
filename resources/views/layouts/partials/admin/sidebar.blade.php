@@ -14,8 +14,8 @@
             </a>
             <div class="collapse" id="collapseCategory" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                 <nav class="sb-sidenav-menu-nested nav">
-                    <a class="nav-link" href="{{ url('admin/categories/create')}}">Create Category</a>
                     <a class="nav-link" href="{{ url('admin/categories')}}">View Category</a>
+                    <a class="nav-link" href="{{ url('admin/categories/create')}}">Create Category</a>
                 </nav>
             </div>
             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseBrand" aria-expanded="false" aria-controls="collapseBrand">
@@ -25,11 +25,22 @@
             </a>
             <div class="collapse" id="collapseBrand" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                 <nav class="sb-sidenav-menu-nested nav">
-                    <a class="nav-link" href="{{ url('admin/brands/create')}}">Create Brand</a>
                     <a class="nav-link" href="{{ url('admin/brands')}}">View Brand</a>
+                    <a class="nav-link" href="{{ url('admin/brands/create')}}">Create Brand</a>
                 </nav>
             </div>
-            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseProduct" aria-expanded="false" aria-controls="collapseProduct">
+                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                Product
+                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+            </a>
+            <div class="collapse" id="collapseProduct" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                <nav class="sb-sidenav-menu-nested nav">
+                    <a class="nav-link" href="{{ url('admin/products')}}">View Product</a>
+                    <a class="nav-link" href="{{ url('admin/products/create')}}">Create Product</a>
+                </nav>
+            </div>
+            <a class="nav-link collapsed d-none" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
                 <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
                 Pages
                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
