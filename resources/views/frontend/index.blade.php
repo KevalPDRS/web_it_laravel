@@ -4,13 +4,25 @@
     <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="{{ asset('assets/images/ecom-slider.jpg') }}" class="d-block w-100" alt="ecom-slider">
+                <picture>
+                    <source media="(min-width: 1440px)" srcset="{{ asset('assets/images/slider_01_2000x722.jpg') }}">
+                    <source media="(min-width: 768px)" srcset="{{ asset('assets/images/slider_01_1500x542.jpg') }}">
+                    <img src="{{ asset('assets/images/slider_01_1000x361.jpg') }}" style="width:auto;" class="d-block w-100">
+                </picture>
             </div>
             <div class="carousel-item">
-                <img src="{{ asset('assets/images/ecom-slider.jpg') }}" class="d-block w-100" alt="ecom-slider">
+                <picture>
+                    <source media="(min-width: 1440px)" srcset="{{ asset('assets/images/slider_02_2000x722.jpg') }}">
+                    <source media="(min-width: 768px)" srcset="{{ asset('assets/images/slider_02_1500x542.jpg') }}">
+                    <img src="{{ asset('assets/images/slider_02_1000x361.jpg') }}" style="width:auto;" class="d-block w-100">
+                </picture>
             </div>
             <div class="carousel-item">
-                <img src="{{ asset('assets/images/ecom-slider.jpg') }}" class="d-block w-100" alt="ecom-slider">
+                <picture>
+                    <source media="(min-width: 1440px)" srcset="{{ asset('assets/images/slider_03_2000x722.jpg') }}">
+                    <source media="(min-width: 768px)" srcset="{{ asset('assets/images/slider_03_1500x542.jpg') }}">
+                    <img src="{{ asset('assets/images/slider_03_1000x361.jpg') }}" style="width:auto;" class="d-block w-100">
+                </picture>
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
