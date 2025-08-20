@@ -8,7 +8,7 @@ My demo Laravel e-commerce project by [@fundaofwebit](https://www.youtube.com/@f
 - Basic e-commerce flow
 
 ## Tech Stack
-- Laravel 10
+- Laravel 12
 - Blade templates
 - MySQL
 
